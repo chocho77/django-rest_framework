@@ -16,11 +16,11 @@ class Snippet(models.Model):
     title = models.CharField(max_length=100, blank=True, default='')
     code = models.TextField()
     linenos = models.BooleanField(default=False)
-    style = models.CharField(choices=STYLE_CHOICES, default='friendly' max_length=100)
+    style = models.CharField(choices=STYLE_CHOICES, default='friendly', max_length=100)
 
     class Meta:
         ordering = ['created']
-        
+
 
 
 
